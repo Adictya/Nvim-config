@@ -12,6 +12,5 @@ let g:airline_powerline_fonts = 1
 set showtabline=2
 
 let g:airline_theme = 'codedark'
-au BufEnter * :Tmuxline
 " We don't need to see things like -- INSERT -- anymore
 " set noshowmode
