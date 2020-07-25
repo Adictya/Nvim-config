@@ -1,7 +1,7 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -27,6 +27,7 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'airblade/vim-rooter'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'mhinz/vim-startify'
 
 call plug#end()
 
@@ -50,6 +51,9 @@ source ~/.config/nvim/plug-config/airline.vim
  
 " Ranger Vim integration and setup
 source ~/.config/nvim/plug-config/rnvimr.vim
+
+" Startify setup
+source ~/.config/nvim/plug-config/start-screen.vim
 
 " Colorizer setup
 lua require'plug-colorizer'
