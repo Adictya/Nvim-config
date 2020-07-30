@@ -3,11 +3,8 @@ call plug#begin('~/.vim/plugged')
 " Plug 'edkolev/tmuxline.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'bling/vim-airline'
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'fatih/vim-go', { 'tag': '*' }
-Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+" Plug 'fatih/vim-go', { 'tag': '*' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-fakeclip'
@@ -18,7 +15,6 @@ Plug 'wellle/targets.vim'
 Plug 'connorholyday/vim-snazzy'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tomasiser/vim-code-dark'
-Plug 'rbgrouleff/bclose.vim'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'airblade/vim-rooter'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -31,6 +27,10 @@ Plug 'tpope/vim-commentary'
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
+Plug 'honza/vim-snippets'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
