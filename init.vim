@@ -31,7 +31,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'honza/vim-snippets'
 Plug 'sheerun/vim-polyglot'
-
+Plug 'metakirby5/codi.vim'
 call plug#end()
 
 
@@ -82,6 +82,9 @@ source ~/.config/nvim/plug-config/floaterm.vim
 
 " Git setup
 source ~/.config/nvim/plug-config/git.vim
+
+" Codi setup
+source ~/.config/nvim/plug-config/codi.vim
 
 " Source the vimrc file after saving it
     autocmd bufwritepost .vimrc source $MYVIMRC

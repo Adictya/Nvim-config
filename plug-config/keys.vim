@@ -38,4 +38,4 @@ nnoremap <leader>ve :edit $MYVIMRC<CR>
 " Tab management
 nnoremap J :bprev<CR>
 nnoremap K :bnext<CR>
-nnoremap <C-w> :w\|bd<Cr>
+" nnoremap <C-w> :w\|bd<Cr>

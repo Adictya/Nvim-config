@@ -32,4 +32,4 @@ set updatetime=300
 set timeoutlen=500                     
 set formatoptions-=cro                 
 set autochdir                          
-
+set splitbelow splitright
