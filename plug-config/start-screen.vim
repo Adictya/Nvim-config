@@ -13,7 +13,7 @@ let g:startify_bookmarks = [
             \ { 't': '~/.tmux.conf' },
             \ { 't': '~/.tmux.conf' },
             \ { 'y': '/mnt/c/Users/nchou/AppData/Roaming/alacritty/alacritty.yml' },
-            \ '/mnt/d/Libraries/Programing',
+            \ { 'p' : '/mnt/d/Libraries/Programing'},
             \ ]
 
 let g:startify_session_delete_buffers = 1
@@ -21,6 +21,7 @@ let g:startify_session_persistence = 1
 let g:startify_enable_special = 0
 
 let g:startify_custom_header = [
+	  \ '   Its',
 	  \ ' 	 ______   __     ______     ______     ______        ______   __     __    __     ______    ',
 	  \ ' 	/\  == \ /\ \   /\___  \   /\___  \   /\  __ \      /\__  _\ /\ \   /\ "-./  \   /\  ___\   ',
 	  \ ' 	\ \  _-/ \ \ \  \/_/  /__  \/_/  /__  \ \  __ \     \/_/\ \/ \ \ \  \ \ \-./\ \  \ \  __\   ',

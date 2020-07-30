@@ -1,6 +1,10 @@
 nnoremap ; :
 nnoremap : ;
 
+let mapleader=" "
+" let localleader=" "
+nnoremap <Space> <Nop>
+
 " Remap ctrl+HJKL to arrow in Insert Mode
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
@@ -27,11 +31,11 @@ nnoremap <C-e> :NERDTreeToggle<CR>
 inoremap <C-e> :NERDTreeToggle<CR>
 
 " Reload VIMRC
-nnoremap <space>vr :source $MYVIMRC<CR>
-nnoremap <space>ve :edit $MYVIMRC<CR>
+nnoremap <leader>vr :source $MYVIMRC<CR>
+nnoremap <leader>ve :edit $MYVIMRC<CR>
 
 
 " Tab management
 nnoremap J :bprev<CR>
 nnoremap K :bnext<CR>
-nnoremap <space>q ::w\|bd<CR>
+nnoremap <C-w> :w\|bd<Cr>

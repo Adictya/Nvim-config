@@ -1,6 +1,3 @@
-"set leader key
-let g:mapleader = '\<space>'
-
 " Basic stup
 syntax enable
 set noswapfile
