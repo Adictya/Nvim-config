@@ -32,6 +32,9 @@ Plug 'junegunn/gv.vim'
 Plug 'honza/vim-snippets'
 Plug 'sheerun/vim-polyglot'
 Plug 'metakirby5/codi.vim'
+Plug 'benmills/vimux'
+Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
+Plug 'kevinoid/vim-jsonc'
 call plug#end()
 
 

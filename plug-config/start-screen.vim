@@ -12,7 +12,7 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ { 't': '~/.tmux.conf' },
             \ { 't': '~/.tmux.conf' },
-            \ { 'y': '/mnt/c/Users/nchou/AppData/Roaming/alacritty/alacritty.yml' },
+            \ { 'w': '/mnt/c/Users/nchou/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json' },
             \ { 'p' : '/mnt/d/Libraries/Programing'},
             \ ]
 

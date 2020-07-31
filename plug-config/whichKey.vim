@@ -6,7 +6,6 @@ vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<space>'<CR>
 let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
-set timeoutlen=500
 
 
 " Not a fan of floating windows for this
@@ -168,7 +167,10 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=popup --height=6'        , 'terminal'],
+      \ ';' : [':VimuxPromptCommand'        , 'terminal'],
+      \ 'l' : [':VimuxRunLastCommand'                               , 'run last command'],
+      \ 'i' : [':VimuxInspectRunner'      , 'copy ouptut'],
+      \ 'z' : [':VimuxZoomRunner'                               , 'zoom terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],

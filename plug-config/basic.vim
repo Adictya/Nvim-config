@@ -33,3 +33,4 @@ set timeoutlen=500
 set formatoptions-=cro                 
 set autochdir                          
 set splitbelow splitright
+set timeoutlen=200
