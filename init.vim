@@ -34,6 +34,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'metakirby5/codi.vim'
 Plug 'benmills/vimux'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
+Plug 'alvan/vim-closetag'
 Plug 'kevinoid/vim-jsonc'
 call plug#end()
 
@@ -75,7 +76,7 @@ lua require'plug-colorizer'
 source ~/.config/nvim/plug-config/goyo.vim
 
 " EasyMotion Setup
-map df <Plug>(easymotion-s2)
+map ff <Plug>(easymotion-s2)
 
 " Which key setup
 source ~/.config/nvim/plug-config/whichKey.vim
@@ -88,6 +89,9 @@ source ~/.config/nvim/plug-config/git.vim
 
 " Codi setup
 source ~/.config/nvim/plug-config/codi.vim
+
+" Auto close pair setup
+source ~/.config/nvim/plug-config/auto-close-tag.vim
 
 " Source the vimrc file after saving it
     autocmd bufwritepost .vimrc source $MYVIMRC
