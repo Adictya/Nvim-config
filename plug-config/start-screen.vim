@@ -11,7 +11,7 @@ let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
             \ { 't': '~/.tmux.conf' },
-            \ { 't': '~/.tmux.conf' },
+            \ { 'r': '~/.config/ranger/rc.conf' },
             \ { 'w': '/mnt/c/Users/nchou/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json' },
             \ { 'p' : '/mnt/d/Libraries/Programing'},
             \ ]

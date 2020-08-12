@@ -39,3 +39,8 @@ nnoremap <leader>ve :edit $MYVIMRC<CR>
 nnoremap J :bprev<CR>
 nnoremap K :bnext<CR>
 " nnoremap <C-w> :w\|bd<Cr>
+
+" Paste and Yank without new line
+nnoremap gP i<CR><Esc>PkJxJx
+nnoremap gp a<CR><Esc>PkJxJx
+nnoremap dil ^d$

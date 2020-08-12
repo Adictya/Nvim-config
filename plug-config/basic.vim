@@ -1,5 +1,6 @@
 " Basic stup
 syntax enable
+set scrolloff=5
 set noswapfile
 set incsearch				
 set nowrap
