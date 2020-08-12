@@ -36,6 +36,8 @@ Plug 'benmills/vimux'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'alvan/vim-closetag'
 Plug 'kevinoid/vim-jsonc'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 call plug#end()
 
 
@@ -92,6 +94,9 @@ source ~/.config/nvim/plug-config/codi.vim
 
 " Auto close pair setup
 source ~/.config/nvim/plug-config/auto-close-tag.vim
+
+" Markdown preview setup
+source ~/.config/nvim/plug-config/markdown.vim
 
 " Source the vimrc file after saving it
     autocmd bufwritepost .vimrc source $MYVIMRC
