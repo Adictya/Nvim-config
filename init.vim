@@ -7,7 +7,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Plug 'fatih/vim-go', { 'tag': '*' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'kana/vim-fakeclip'
+" Plug 'kana/vim-fakeclip'
 Plug 'easymotion/vim-easymotion',
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -38,7 +38,6 @@ Plug 'alvan/vim-closetag'
 Plug 'kevinoid/vim-jsonc'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
-
 call plug#end()
 
 
@@ -50,6 +49,8 @@ source ~/.config/nvim/plug-config/fzf.vim
 
 " COC setup
 source ~/.config/nvim/plug-config/coc.vim
+
+" Pretier Setup
 
 " Keybindings setup file
 source ~/.config/nvim/plug-config/keys.vim

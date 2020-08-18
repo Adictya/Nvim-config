@@ -1,3 +1,2 @@
-colorscheme snazzy
-let g:SnazzyTransparent = 1
+colorscheme kolor
 
