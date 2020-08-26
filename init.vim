@@ -38,6 +38,7 @@ Plug 'alvan/vim-closetag'
 Plug 'kevinoid/vim-jsonc'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 

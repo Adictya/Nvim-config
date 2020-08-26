@@ -1,2 +1,2 @@
-colorscheme kolor
+colorscheme snaz
 
