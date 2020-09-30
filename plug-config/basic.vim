@@ -23,7 +23,7 @@ set smarttab
 set smartindent                        
 set autoindent                         
 set laststatus=0                       
-set number                             
+set number relativenumber                             
 set cursorline                         
 set background=dark                    
 set noshowmode                         
@@ -35,3 +35,4 @@ set formatoptions-=cro
 set autochdir                          
 set splitbelow splitright
 set timeoutlen=200
+autocmd BufWritePre * %s/\s\+$//e

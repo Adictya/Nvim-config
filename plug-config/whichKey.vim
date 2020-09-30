@@ -41,7 +41,7 @@ let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['W'] = [ 'w'                          , 'write' ]
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 let g:which_key_map['u'] = [ ':cd %:p:h'           		  , 'update directory' ]
-
+let g:which_key_map['e'] = [ ':NERDTreeToggle'           		  , 'Open Explorer' ]
 " Group mappings
 
 " a is for actions

@@ -39,6 +39,7 @@ Plug 'kevinoid/vim-jsonc'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'chriskempson/base16-vim'
+" Plug 'takac/vim-hardtime'
 call plug#end()
 
 
@@ -101,5 +102,8 @@ source ~/.config/nvim/plug-config/auto-close-tag.vim
 " Markdown preview setup
 source ~/.config/nvim/plug-config/markdown.vim
 
+" Hard Time setup
+source ~/.config/nvim/plug-config/hardTime.vim
+
 " Source the vimrc file after saving it
-    autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost .vimrc source $MYVIMRC

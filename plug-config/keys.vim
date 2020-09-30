@@ -16,8 +16,8 @@ cnoremap <C-k> <Up>
 cnoremap <C-l> <Right>
 
 " Map C-A to calculate expression on cursor line
-inoremap <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
-nnoremap <C-A> i<C-O>diW<End><C-R>=<C-R>0<CR>
+" inoremap <C-A> <C-O>yiW<End>=<C-R>=<C-R>0<CR>
+" nnoremap <C-A> i<C-O>diW<End><C-R>=<C-R>0<CR>
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
@@ -26,14 +26,9 @@ inoremap <expr> <c-k> ("\<C-p>")
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 
-" Toggle NERDTreeToggle
-nnoremap <C-e> :NERDTreeToggle<CR>
-inoremap <C-e> :NERDTreeToggle<CR>
-
-" Reload VIMRC
-nnoremap <leader>vr :source $MYVIMRC<CR>
-nnoremap <leader>ve :edit $MYVIMRC<CR>
-
+" " Toggle NERDTreeToggle
+" nnoremap <C-e> :NERDTreeToggle<CR>
+" inoremap <C-e> :NERDTreeToggle<CR>
 
 " Tab management
 nnoremap J :bprev<CR>
