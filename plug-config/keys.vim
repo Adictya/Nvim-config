@@ -24,11 +24,21 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Alternate way to save
-nnoremap <C-s> :w<CR>
+nnoremap <C-s> :noa w<CR>
 
 " " Toggle NERDTreeToggle
 " nnoremap <C-e> :NERDTreeToggle<CR>
 " inoremap <C-e> :NERDTreeToggle<CR>
+
+" Inser line above and below
+nnoremap R :<c-u>call append('.', '')<cr>:call append(line('.')-1, '')<cr>
+
+" Yank to alternative buffer
+nnoremap Y "2y
+nnoremap <m-p> "2p
+
+nnoremap <c-J> :m+<cr>
+nnoremap <c-K> :m-2<cr>
 
 " Tab management
 nnoremap J :bprev<CR>

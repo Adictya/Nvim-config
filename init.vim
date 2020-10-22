@@ -19,7 +19,7 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'airblade/vim-rooter'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mhinz/vim-startify'
-Plug 'unblevable/quick-scope' 
+Plug 'unblevable/quick-scope'
 Plug 'liuchengxu/vim-which-key'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
@@ -39,7 +39,9 @@ Plug 'kevinoid/vim-jsonc'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 Plug 'chriskempson/base16-vim'
+Plug 'tpope/vim-repeat'
 " Plug 'takac/vim-hardtime'
+" Plug 'mattn/emmet-vim'
 call plug#end()
 
 
@@ -65,7 +67,7 @@ source ~/.config/nvim/plug-config/theme.vim
 
 " Vim Airline setup
 source ~/.config/nvim/plug-config/airline.vim
- 
+
 " Ranger Vim integration and setup
 source ~/.config/nvim/plug-config/rnvimr.vim
 
@@ -105,5 +107,9 @@ source ~/.config/nvim/plug-config/markdown.vim
 " Hard Time setup
 source ~/.config/nvim/plug-config/hardTime.vim
 
+" Emmet Setup
+source ~/.config/nvim/plug-config/emmet.vim
+
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd FileType vim set fo-=cro
