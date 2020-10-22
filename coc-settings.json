@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python","c"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python","c","typescript","typescriptreact"],
 
   // python config
   "python.linting.enabled": true,
@@ -14,6 +14,8 @@
 
   "prettier.tabWidth":4,
 
-  "prettier.useTabs":true
+  "prettier.useTabs":true,
+
+  "prettier.eslintIntegration": false
 
 }
