@@ -1,23 +1,23 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/vimlsp')
 
-" Automagically set indent per file
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
+Plug 'tpope/vim-commentary'
+Plug 'tweekmonster/startuptime.vim'
+Plug 'mizlan/termbufm'
+Plug 'mhinz/vim-signify'
+Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sleuth'
-" Easily align shit
 Plug 'junegunn/vim-easy-align'
-" Get tabline and a better status line
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'Adictya/nvcode-color-schemes.vim'
 Plug 'bling/vim-airline'
 Plug 'tweekmonster/startuptime.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'tomasiser/vim-code-dark'
 Plug 'junegunn/limelight.vim'
 Plug 'wellle/targets.vim'
-Plug 'connorholyday/vim-snazzy'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tomasiser/vim-code-dark'
 Plug 'airblade/vim-rooter'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mhinz/vim-startify'
@@ -29,18 +29,15 @@ Plug 'tpope/vim-commentary'
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-signify'
 Plug 'honza/vim-snippets'
-" Plug 'sheerun/vim-polyglot'
 Plug 'metakirby5/codi.vim'
 Plug 'benmills/vimux'
 Plug 'alvan/vim-closetag'
 Plug 'kevinoid/vim-jsonc'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-" Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
-Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-repeat'
 Plug 'vifm/vifm.vim'
 Plug 'ChristianChiarulli/far.vim'
-" Plug 'easymotion/vim-easymotion',
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'Adictya/nvcode-color-schemes.vim'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'liuchengxu/vista.vim'
 Plug 'kana/vim-textobj-entire'
@@ -56,11 +53,11 @@ source ~/.config/nvim/plug-config/basic.vim
 " Fzf setup
 source ~/.config/nvim/plug-config/fzf.vim
 
-" COC setup
-source ~/.config/nvim/plug-config/coc.vim
-
 " Keybindings setup file
 source ~/.config/nvim/plug-config/keys.vim
+
+" Vim Lsp Setup
+source ~/.config/nvim/plug-config/vimlsp.vim
 
 " Windows clipboard sync setup file
 source ~/.config/nvim/plug-config/clipboard.vim
@@ -70,9 +67,6 @@ source ~/.config/nvim/plug-config/theme.vim
 
 " Vim Airline setup
 source ~/.config/nvim/plug-config/airline.vim
-
-" Ranger Vim integration and setup
-" source ~/.config/nvim/plug-config/rnvimr.vim
 
 " Vifm Vim integration
 source ~/.config/nvim/plug-config/vifm.vim
@@ -111,15 +105,13 @@ source ~/.config/nvim/plug-config/codi.vim
 " Auto close pair setup
 source ~/.config/nvim/plug-config/auto-close-tag.vim
 
-" Markdown preview setup
-source ~/.config/nvim/plug-config/markdown.vim
-
 " Hard Time setup
 source ~/.config/nvim/plug-config/hardTime.vim
 
 " Emmet Setup
 source ~/.config/nvim/plug-config/emmet.vim
 
+echo "Start coding you coon"
 
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC

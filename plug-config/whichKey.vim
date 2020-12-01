@@ -33,14 +33,14 @@ let g:which_key_map['d'] = [ ':bd!'                        , 'delete buffer']
 let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
-let g:which_key_map['r'] = [ ':RnvimrToggle'              , 'ranger' ]
+let g:which_key_map['r'] = [ ':Vifm'              , 'ranger' ]
 let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['W'] = [ 'w'                          , 'write' ]
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 let g:which_key_map['u'] = [ ':cd %:p:h'           		  , 'update directory' ]
 let g:which_key_map['e'] = [ ':NERDTreeToggle'           		  , 'Open Explorer' ]
 let g:which_key_map['p'] = [ ':Buffers'           		  , 'search buffer' ]
+let g:which_key_map['t'] = [ ':!explorer.exe .'           		  , 'open Wexplorer' ]
 " Group mappings
 
 " a is for actions
@@ -175,7 +175,7 @@ let g:which_key_map.t = {
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'p' : [':FloatermNew python3'                           , 'python'],
       \ 'r' : [':FloatermNew vifm'                            , 'vifm'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
+      \ 't' : [':call VimuxRunCommand(";")'                                , 'toggle'],
       \ 'c' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 &&  ./a.out")'           , 'Cpp Compile And Run'],
 	  \ 'C' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 && cat input.txt | ./a.out")' , 'Cpp with custom input'],
       \ }

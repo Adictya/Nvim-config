@@ -38,6 +38,7 @@ set timeoutlen=200
 set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
+set termguicolors
 set foldlevel=200
 autocmd BufWritePre * %s/\s\+$//e
 
