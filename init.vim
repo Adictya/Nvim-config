@@ -36,17 +36,18 @@ Plug 'alvan/vim-closetag'
 Plug 'kevinoid/vim-jsonc'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 " Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
-Plug 'chriskempson/base16-vim'
+" Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-repeat'
 Plug 'vifm/vifm.vim'
 Plug 'ChristianChiarulli/far.vim'
 " Plug 'easymotion/vim-easymotion',
 Plug 'vim-scripts/ReplaceWithRegister'
-Plug 'liuchengxu/vista.vim'
+" Plug 'liuchengxu/vista.vim'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 
@@ -123,4 +124,5 @@ source ~/.config/nvim/plug-config/emmet.vim
 
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd FileType cpp let b:coc_pairs_disabled = ['<']
 autocmd FileType vim set fo-=cro

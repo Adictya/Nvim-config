@@ -30,12 +30,11 @@ set noshowmode
 set nobackup
 set nowritebackup
 set updatetime=300
-set timeoutlen=500
 set formatoptions-=cro
 set autochdir
 set splitbelow splitright
 set timeoutlen=200
-set foldmethod=syntax
+set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set termguicolors

@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python","c","typescript","typescriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python","c","typescript","typescriptreact","cpp"],
 
   // python config
   "python.linting.enabled": true,
@@ -10,13 +10,21 @@
     "UltiSnips",
     "~/.config/nvim/utils/snips"
   ],
-  "clangd.path": "/home/adictya/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd",
+  "clangd.path": "/home/aditya/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
 
-  //"prettier.tabWidth":4,
+  // "prettier.tabWidth":2,
 
-  "prettier.useTabs":true,
+  // "prettier.singleQuote":true,
 
-  "prettier.eslintIntegration": false,
+  // "prettier.trailingComma":"es5",
+
+  // "prettier.bracketSpacing":false,
+
+  // "prettier.semi":false,
+
+  "coc.preferences.formatOnSaveFiletypes": ["css", "javascript"],
+
+  "prettier.eslintIntegration": true,
 
   "emmet.showAbbreviationSuggestions": true,
 
