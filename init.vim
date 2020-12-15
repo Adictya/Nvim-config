@@ -50,6 +50,7 @@ Plug 'kana/vim-textobj-user'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/nvim-bufferline.lua'
+Plug 'glepnir/galaxyline.nvim'
 call plug#end()
 
 " lua require'bufferline'.setup()
@@ -73,11 +74,14 @@ source ~/.config/nvim/plug-config/clipboard.vim
 " Theme setup
 source ~/.config/nvim/plug-config/theme.vim
 
-" Vim Airline setup
-source ~/.config/nvim/plug-config/airline.vim
+" " Vim Airline setup
+" source ~/.config/nvim/plug-config/airline.vim
 
 " Vim Buffer line setup
 lua require'buffer-line'
+
+" Vim status line setup
+" lua require'test'
 
 " Ranger Vim integration and setup
 " source ~/.config/nvim/plug-config/rnvimr.vim
@@ -128,6 +132,7 @@ source ~/.config/nvim/plug-config/hardTime.vim
 " Emmet Setup
 source ~/.config/nvim/plug-config/emmet.vim
 
+luafile ~/.config/nvim/lua/galaxy-line.lua
 
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC
