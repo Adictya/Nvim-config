@@ -9,8 +9,8 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline_powerline_fonts = 1
 
 " Always show tabs
-set showtabline=2
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+set showtabline=0
+" let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline_theme = 'codedark'
 " We don't need to see things like -- INSERT -- anymore
 " set noshowmode

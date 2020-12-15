@@ -41,8 +41,12 @@ nnoremap <c-J> :m+<cr>
 nnoremap <c-K> :m-2<cr>
 
 " Tab management
-nnoremap J :bprev<CR>
-nnoremap K :bnext<CR>
+nnoremap J :BufferLineCyclePrev<CR>
+nnoremap K :BufferLineCycleNext<CR>
+nnoremap <m-d> :BufferLineMovePrev<CR>
+nnoremap <m-f> :BufferLineMoveNext<CR>
+nnoremap <m-b> :BufferLinePick<CR>
+
 " nnoremap <C-w> :w\|bd<Cr>
 
 " Paste and Yank without new line

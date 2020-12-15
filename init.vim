@@ -7,7 +7,7 @@ Plug 'junegunn/vim-easy-align'
 " Get tabline and a better status line
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'Adictya/nvcode-color-schemes.vim'
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
 Plug 'tweekmonster/startuptime.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -47,8 +47,12 @@ Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+Plug 'akinsho/nvim-bufferline.lua'
 call plug#end()
+
+" lua require'bufferline'.setup()
 
 
 " Basic Setup
@@ -71,6 +75,9 @@ source ~/.config/nvim/plug-config/theme.vim
 
 " Vim Airline setup
 source ~/.config/nvim/plug-config/airline.vim
+
+" Vim Buffer line setup
+lua require'buffer-line'
 
 " Ranger Vim integration and setup
 " source ~/.config/nvim/plug-config/rnvimr.vim
