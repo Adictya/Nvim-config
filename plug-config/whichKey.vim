@@ -17,6 +17,7 @@ highlight default link WhichKeySeperator DiffAdded
 highlight default link WhichKeyGroup     Identifier
 highlight default link WhichKeyDesc      Function
 
+
 " Hide status line
 autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
@@ -38,7 +39,7 @@ let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
 let g:which_key_map['u'] = [ ':cd %:p:h'           		  , 'update directory' ]
-let g:which_key_map['e'] = [ ':NERDTreeToggle'           		  , 'Open Explorer' ]
+let g:which_key_map['e'] = [ ':LuaTreeToggle'           		  , 'Open Explorer' ]
 let g:which_key_map['p'] = [ ':Buffers'           		  , 'search buffer' ]
 let g:which_key_map['t'] = [ ':!explorer.exe .'           		  , 'open Wexplorer' ]
 " Group mappings
@@ -70,8 +71,8 @@ let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '/' : [':History/'              , 'history'],
       \ ';' : [':Commands'              , 'commands'],
-      \ 'b' : [':Farf --source=rgnvim'                , 'project Wide'],
-      \ 'r' : [':Farr --source=rgnvim'                , 'S and R'],
+      \ 'b' : [':Telescope live_grep'   , 'project Wide'],
+      \ 'r' : [':Farr --source=rgnvim'  , 'S and R'],
       \ 'B' : [':Buffers'               , 'open buffers'],
       \ 'c' : [':Commits'               , 'commits'],
       \ 'C' : [':BCommits'              , 'buffer commits'],
@@ -95,30 +96,12 @@ let g:which_key_map.s = {
 
 " g is for git
 let g:which_key_map.g = {
-      \ 'name' : '+git' ,
-      \ 'a' : [':Git add .'                        , 'add all'],
-      \ 'A' : [':Git add %'                        , 'add current'],
-      \ 'b' : [':Git blame'                        , 'blame'],
-      \ 'B' : [':GBrowse'                          , 'browse'],
-      \ 'c' : [':Git commit'                       , 'commit'],
-      \ 'd' : [':Git diff'                         , 'diff'],
-      \ 'D' : [':Gdiffsplit'                       , 'diff split'],
-      \ 'g' : [':GGrep'                            , 'git grep'],
-      \ 'G' : [':Gstatus'                          , 'status'],
-      \ 'h' : [':GitGutterLineHighlightsToggle'    , 'highlight hunks'],
-      \ 'H' : ['<Plug>(GitGutterPreviewHunk)'      , 'preview hunk'],
-      \ 'j' : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'],
-      \ 'k' : ['<Plug>(GitGutterPrevHunk)'         , 'prev hunk'],
-      \ 'l' : [':Git log'                          , 'log'],
-      \ 'p' : [':Git push'                         , 'push'],
-      \ 'P' : [':Git pull'                         , 'pull'],
-      \ 'r' : [':GRemove'                          , 'remove'],
-      \ 's' : ['<Plug>(GitGutterStageHunk)'        , 'stage hunk'],
-      \ 't' : [':GitGutterSignsToggle'             , 'toggle signs'],
-      \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'undo hunk'],
-      \ 'v' : [':GV'                               , 'view commits'],
-      \ 'V' : [':GV!'                              , 'view buffer commits'],
-      \ }
+      \ 'name' : '+git',
+       \ }
+      " \ 'a' : [':lua require"gitsigns".stage_hunk()', 'stage current hunk'],
+      " \ 'u' : [':lua require"gitsigns".undo_stage_hunk()', 'unstage current hunk'],
+      " \ 'r' : [':lua require"gitsigns".preview_hunk()', 'reset current hunk'],
+      " \ 'b' : [':lua require"gitsigns".blame_line()', 'blame current line'],
 
 " l is for language server protocol
 let g:which_key_map.l = {
@@ -175,6 +158,11 @@ let g:which_key_map.t = {
       \ 'c' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 &&  ./a.out")'           , 'Cpp Compile And Run'],
 	  \ 'C' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 && cat input.txt | ./a.out")' , 'Cpp with custom input'],
       \ }
+
+nnoremap <leader>ga = :lua require'gitsigns'.stage_hunk()<CR>
+nnoremap <leader>gu = :lua require'gitsigns'.undo_stage_hunk()<CR>
+nnoremap <leader>gr = :lua require'gitsigns'.reset_hunk()<CR>
+nnoremap <leader>gb = :lua require'gitsigns'.blame_line()<CR>
 
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

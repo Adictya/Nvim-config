@@ -9,7 +9,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'Adictya/nvcode-color-schemes.vim'
 " Plug 'bling/vim-airline'
 Plug 'tweekmonster/startuptime.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
@@ -27,7 +27,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'voldikss/vim-floaterm'
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
 Plug 'honza/vim-snippets'
 " Plug 'sheerun/vim-polyglot'
 Plug 'metakirby5/codi.vim'
@@ -51,9 +51,14 @@ Plug 'kana/vim-textobj-user'
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'glepnir/galaxyline.nvim'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
-" lua require'bufferline'.setup()
+lua require'gitsigns'.setup()
 
 
 " Basic Setup
@@ -79,6 +84,9 @@ source ~/.config/nvim/plug-config/theme.vim
 
 " Vim Buffer line setup
 lua require'buffer-line'
+
+" Neo Tree setup
+source ~/.config/nvim/plug-config/neo-tree.vim
 
 " Vim status line setup
 " lua require'test'
