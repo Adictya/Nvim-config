@@ -11,7 +11,7 @@ Plug 'Adictya/nvcode-color-schemes.vim'
 Plug 'tweekmonster/startuptime.vim'
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'wellle/targets.vim'
@@ -53,13 +53,14 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'glepnir/galaxyline.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-lua/popup.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 lua require'gitsigns'.setup()
-
+lua require'telescope'.load_extension('ghcli')
 
 " Basic Setup
 source ~/.config/nvim/plug-config/basic.vim

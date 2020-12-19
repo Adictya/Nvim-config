@@ -5,6 +5,9 @@ let mapleader=" "
 " let localleader=" "
 nnoremap <Space> <Nop>
 
+xnoremap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
+
 " Remap ctrl+HJKL to arrow in Insert Mode
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>

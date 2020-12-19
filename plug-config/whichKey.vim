@@ -25,23 +25,24 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 
 
 " Single mappings
-let g:which_key_map['/'] = [ 'gcc'  , 'comment' ]
-let g:which_key_map['.'] = [ ':e $MYVIMRC'                , 'open init' ]
-let g:which_key_map['R'] = [ ':source $MYVIMRC'                , 'reload init' ]
-let g:which_key_map['='] = [ '<C-W>='                     , 'balance windows' ]
-let g:which_key_map[','] = [ 'Startify'                   , 'start screen' ]
-let g:which_key_map['d'] = [ ':bd!'                        , 'delete buffer']
-let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
-let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
-let g:which_key_map['q'] = [ 'q'                          , 'quit' ]
-let g:which_key_map['r'] = [ ':Vifm'              , 'ranger' ]
-let g:which_key_map['S'] = [ ':SSave'                     , 'save session' ]
-let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
-let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
-let g:which_key_map['u'] = [ ':cd %:p:h'           		  , 'update directory' ]
-let g:which_key_map['e'] = [ ':LuaTreeToggle'           		  , 'Open Explorer' ]
-let g:which_key_map['p'] = [ ':Buffers'           		  , 'search buffer' ]
-let g:which_key_map['t'] = [ ':!explorer.exe .'           		  , 'open Wexplorer' ]
+let g:which_key_map['/'] = [ 'gcc',                   'comment' ]
+let g:which_key_map['.'] = [ ':e $MYVIMRC',           'open init' ]
+let g:which_key_map['R'] = [ ':source $MYVIMRC',      'reload init' ]
+let g:which_key_map['='] = [ '<C-W>=',                'balance windows' ]
+let g:which_key_map[','] = [ 'Startify',              'start screen' ]
+let g:which_key_map['d'] = [ ':bd!',                  'delete buffer']
+let g:which_key_map['f'] = [ ':Telescope find_files', 'search files' ]
+let g:which_key_map['h'] = [ '<C-W>s',                'split below']
+let g:which_key_map['q'] = [ 'q',                     'quit' ]
+let g:which_key_map['r'] = [ ':Vifm',                 'ranger' ]
+let g:which_key_map['S'] = [ ':SSave',                'save session' ]
+let g:which_key_map['v'] = [ '<C-W>v',                'split right']
+let g:which_key_map['z'] = [ 'Goyo',                  'zen' ]
+let g:which_key_map['u'] = [ ':cd %:p:h',             'update directory' ]
+let g:which_key_map['e'] = [ ':LuaTreeToggle',        'Open Explorer' ]
+let g:which_key_map['p'] = [ ':Buffers',              'search buffer' ]
+let g:which_key_map['w'] = [ ':!explorer.exe .',      'open Wexplorer' ]
+let g:which_key_map['c'] = [ ':Telescope registers',  'clipboard' ]
 " Group mappings
 
 " a is for actions
@@ -69,39 +70,48 @@ let g:which_key_map.b = {
 " s is for search
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
-      \ '/' : [':History/'              , 'history'],
-      \ ';' : [':Commands'              , 'commands'],
-      \ 'b' : [':Telescope live_grep'   , 'project Wide'],
-      \ 'r' : [':Farr --source=rgnvim'  , 'S and R'],
-      \ 'B' : [':Buffers'               , 'open buffers'],
-      \ 'c' : [':Commits'               , 'commits'],
-      \ 'C' : [':BCommits'              , 'buffer commits'],
-      \ 'f' : [':Files'                 , 'files'],
-      \ 'g' : [':GFiles'                , 'git files'],
-      \ 'h' : [':History'               , 'file history'],
-      \ 'H' : [':History:'              , 'command history'],
-      \ 'l' : [':Lines'                 , 'lines'] ,
-      \ 'm' : [':Marks'                 , 'marks'] ,
-      \ 'M' : [':Maps'                  , 'normal maps'] ,
-      \ 'p' : [':Helptags'              , 'help tags'] ,
-      \ 'P' : [':Tags'                  , 'project tags'],
-      \ 's' : [':CocList snippets'      , 'snippets'],
-      \ 'S' : [':Colors'                , 'color schemes'],
-      \ 'T' : [':BTags'                 , 'buffer tags'],
-      \ 'w' : [':Windows'               , 'search windows'],
-      \ 'y' : [':Filetypes'             , 'file types'],
-      \ 'z' : [':FZF'                   , 'FZF'],
+      \ '/' : [':Telescope command_history',           'history'],
+      \ ';' : [':Telescope commands',                  'commands'],
+      \ 'b' : [':Telescope live_grep',                 'project Wide'],
+      \ 'r' : [':Farr --source=rgnvim',                'S and R'],
+      \ 'B' : [':Telescope buffers',                   'open buffers'],
+      \ 'c' : [':Telescope git_commits',               'commits'],
+      \ 'C' : [':Telescope git_bcommits',              'buffer commits'],
+      \ 'f' : [':Telescope find_files',                'files'],
+      \ 'g' : [':Telescope git_files',                 'git files'],
+      \ 'h' : [':Telescope oldfiles',                  'file history'],
+      \ 'H' : [':Telescope command_history',           'command history'],
+      \ 'l' : [':Telescope current_buffer_fuzzy_find', 'lines'] ,
+      \ 'm' : [':Telescope marks',                     'marks'] ,
+      \ 'M' : [':Telescope keymaps',                   'normal maps'] ,
+      \ 'p' : [':Telescope help_tags',                 'help tags'] ,
+      \ 'P' : [':Telescope tags',                      'project tags'],
+      \ 's' : [':CocList snippets',                    'snippets'],
+      \ 'S' : [':Telescope colorscheme',               'color schemes'],
+      \ 'T' : [':Telescope treesitter',                'Treesitter'],
+      \ 'y' : [':Telescope filetypes',                 'file types'],
+      \ 'z' : [':Telescope vim_options',               'Vim Options'],
+      \ 't' : [':Telescope highlights',                'Highlights'],
       \ }
       " \ 's' : [':Snippets'     , 'snippets'],
+
+nnoremap <leader>gs = :lua require'gitsigns'.stage_hunk()<CR>
+nnoremap <leader>gu = :lua require'gitsigns'.undo_stage_hunk()<CR>
+nnoremap <leader>gr = :lua require'gitsigns'.reset_hunk()<CR>
+nnoremap <leader>gb = :lua require'gitsigns'.blame_line()<CR>
 
 " g is for git
 let g:which_key_map.g = {
       \ 'name' : '+git',
+      \ 'i' : [':Telescope gh_issues'                          , 'Issues'],
+      \ 'p' : [':Telescope gh_pull_request'                          , 'Pull Requests'],
+      \ 's' : 'Stage Hunk',
+      \ 'u' : 'Unstage Hunk',
+      \ 'r' : 'Reset Hunk',
+      \ 'l' : 'Blame Line',
+      \ 'g' : [':Telescope gh_gist'                          , 'Gists'],
        \ }
-      " \ 'a' : [':lua require"gitsigns".stage_hunk()', 'stage current hunk'],
-      " \ 'u' : [':lua require"gitsigns".undo_stage_hunk()', 'unstage current hunk'],
-      " \ 'r' : [':lua require"gitsigns".preview_hunk()', 'reset current hunk'],
-      " \ 'b' : [':lua require"gitsigns".blame_line()', 'blame current line'],
+
 
 " l is for language server protocol
 let g:which_key_map.l = {
@@ -159,10 +169,6 @@ let g:which_key_map.t = {
 	  \ 'C' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 && cat input.txt | ./a.out")' , 'Cpp with custom input'],
       \ }
 
-nnoremap <leader>ga = :lua require'gitsigns'.stage_hunk()<CR>
-nnoremap <leader>gu = :lua require'gitsigns'.undo_stage_hunk()<CR>
-nnoremap <leader>gr = :lua require'gitsigns'.reset_hunk()<CR>
-nnoremap <leader>gb = :lua require'gitsigns'.blame_line()<CR>
 
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
