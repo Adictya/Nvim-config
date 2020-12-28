@@ -22,7 +22,7 @@
 
   // "prettier.semi":false,
 
-  // "prettier.eslintIntegration": true,
+  "prettier.eslintIntegration": true,
 
   "emmet.showAbbreviationSuggestions": true,
 

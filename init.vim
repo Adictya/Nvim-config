@@ -7,6 +7,7 @@ Plug 'junegunn/vim-easy-align'
 " Get tabline and a better status line
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'Adictya/nvcode-color-schemes.vim'
+" Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 " Plug 'bling/vim-airline'
 Plug 'tweekmonster/startuptime.vim'
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -48,7 +49,6 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
 " Plug 'ryanoasis/vim-devicons'
-Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'glepnir/galaxyline.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
@@ -57,6 +57,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 call plug#end()
 
 lua require'gitsigns'.setup()
@@ -142,6 +143,7 @@ source ~/.config/nvim/plug-config/hardTime.vim
 source ~/.config/nvim/plug-config/emmet.vim
 
 luafile ~/.config/nvim/lua/galaxy-line.lua
+" luafile ~/.config/nvim/lua/evline.lua
 
 " Source the vimrc file after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC
