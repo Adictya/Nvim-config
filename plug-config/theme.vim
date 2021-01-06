@@ -10,3 +10,6 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 EOF
+
+highlight StartifyHeader  ctermfg=Blue guifg=#099DFD guibg=#fff
+

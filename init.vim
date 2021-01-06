@@ -6,7 +6,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'junegunn/vim-easy-align'
 " Get tabline and a better status line
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'Adictya/nvcode-color-schemes.vim'
+" Plug 'Adictya/nvcode-color-schemes.vim'
 " Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 " Plug 'bling/vim-airline'
 Plug 'tweekmonster/startuptime.vim'
