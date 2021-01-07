@@ -65,4 +65,4 @@ Plug 'kana/vim-textobj-user'
 Plug 'sainnhe/edge'
 
 call plug#end()
-colorscheme edge
+colorscheme gruvbox
