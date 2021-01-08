@@ -61,7 +61,7 @@ Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
 call plug#end()
 
 lua require'gitsigns'.setup()
-lua require'telescope'.load_extension('ghcli')
+lua require'telescope'.load_extension('gh')
 
 " Basic Setup
 source ~/.config/nvim/plug-config/basic.vim
@@ -137,7 +137,7 @@ source ~/.config/nvim/plug-config/auto-close-tag.vim
 source ~/.config/nvim/plug-config/markdown.vim
 
 " Hard Time setup
-source ~/.config/nvim/plug-config/hardTime.vim
+" source ~/.config/nvim/plug-config/hardTime.vim
 
 " Emmet Setup
 source ~/.config/nvim/plug-config/emmet.vim
