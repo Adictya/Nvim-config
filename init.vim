@@ -59,6 +59,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 lua require'gitsigns'.setup()
