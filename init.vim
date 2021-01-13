@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " Automagically set indent per file
 Plug 'tpope/vim-sleuth'
+" Plug 'glepnir/indent-guides.nvim'
 " Easily align shit
 Plug 'junegunn/vim-easy-align'
 " Get tabline and a better status line
@@ -143,6 +144,8 @@ source ~/.config/nvim/plug-config/markdown.vim
 
 " Emmet Setup
 source ~/.config/nvim/plug-config/emmet.vim
+
+" luafile ~/.config/nvim/lua/indent-guides.lua
 
 luafile ~/.config/nvim/lua/galaxy-line.lua
 " luafile ~/.config/nvim/lua/evline.lua
