@@ -50,6 +50,11 @@ nnoremap <m-d> :BufferLineMovePrev<CR>
 nnoremap <m-f> :BufferLineMoveNext<CR>
 nnoremap <m-b> :BufferLinePick<CR>
 
+nnoremap ^i :noh<CR>
+
+" hop
+nnoremap s :HopWord<CR>
+
 " nnoremap <C-w> :w\|bd<Cr>
 
 " Paste and Yank without new line

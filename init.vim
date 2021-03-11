@@ -17,7 +17,8 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'airblade/vim-rooter'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'mhinz/vim-startify'
-Plug 'justinmk/vim-sneak'
+" Plug 'justinmk/vim-sneak'
+Plug 'phaazon/hop.nvim'
 Plug 'unblevable/quick-scope'
 Plug 'liuchengxu/vim-which-key'
 Plug 'tpope/vim-surround'
@@ -97,7 +98,7 @@ source ~/.config/nvim/plug-config/vifm.vim
 source ~/.config/nvim/plug-config/start-screen.vim
 
 " Quickscope setup
-source ~/.config/nvim/plug-config/sneak.vim
+" source ~/.config/nvim/plug-config/sneak.vim
 
 " Quickscope setup
 source ~/.config/nvim/plug-config/quickscope.vim
