@@ -40,8 +40,10 @@ Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
+" LSP CONFIG
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'onsails/lspkind-nvim'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'glepnir/galaxyline.nvim'
@@ -64,7 +66,7 @@ source ~/.config/nvim/plug-config/basic.vim
 source ~/.config/nvim/plug-config/fzf.vim
 
 " COC setup
-source ~/.config/nvim/plug-config/coc.vim
+" source ~/.config/nvim/plug-config/coc.vim
 
 " Keybindings setup file
 source ~/.config/nvim/plug-config/keys.vim
@@ -129,6 +131,9 @@ source ~/.config/nvim/plug-config/auto-close-tag.vim
 
 " Markdown preview setup
 source ~/.config/nvim/plug-config/markdown.vim
+
+" LSP config
+source ~/.config/nvim/plug-config/lsp-config.vim
 
 " Hard Time setup
 " source ~/.config/nvim/plug-config/hardTime.vim
