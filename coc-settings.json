@@ -1,5 +1,5 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python","c","typescript","typescriptreact","cpp"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript", "graphql", "html", "yaml",  "json", "python","c","cpp"],
 
   // python config
   "python.linting.enabled": true,
@@ -26,6 +26,36 @@
 
   "emmet.showAbbreviationSuggestions": true,
 
-  "emmet.includeLanguages": {"vue-html": "html", "javascript": "javascriptreact"}
+  "emmet.includeLanguages": {"vue-html": "html", "javascript": "javascriptreact"},
+
+  "snippets.priority" : 1,
+
+"suggest.completionItemKindLabels": {
+    "method": "  ",
+    "function": "  ",
+    "variable": "[]",
+    "field": "  ",
+    "typeParameter": "<>",
+    "constant": "  ",
+    "class": " פּ ",
+    "interface": " 蘒",
+    "struct": "  ",
+    "event": "  ",
+    "operator": "  ",
+    "module": "  ",
+    "property": "  ",
+    "enum": " 練",
+    "reference": "  ",
+    "keyword": "  ",
+    "file": "  ",
+    "folder": " ﱮ ",
+    "color": "  ",
+    "unit": " 塞 ",
+    "snippet": "  ",
+    "text": "  ",
+    "constructor": "  ",
+    "value": "  ",
+    "enumMember": "  "
+  }
 
 }

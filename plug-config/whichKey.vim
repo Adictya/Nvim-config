@@ -167,6 +167,8 @@ let g:which_key_map.t = {
       \ 't' : [':call VimuxRunCommand(";")'                                , 'toggle'],
       \ 'c' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 &&  ./a.out")'           , 'Cpp Compile And Run'],
 	  \ 'C' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 && cat input.txt | ./a.out")' , 'Cpp with custom input'],
+      \ 'J' : [':call VimuxRunCommand("c;javac " . bufname("%") . " && cat input.txt | java " . expand("%:r") )'  , 'Java with Custom input'],
+      \ 'j' : [':call VimuxRunCommand("c;javac " . bufname("%") . " && java " . expand("%:r"))'           , 'Java Compile and Run']
       \ }
 
 
