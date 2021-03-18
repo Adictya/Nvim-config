@@ -9,7 +9,8 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'Adictya/nvcode-color-schemes.vim'
 " Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 " Plug 'bling/vim-airline'
-Plug 'tweekmonster/startuptime.vim'
+" Plug 'tweekmonster/startuptime.vim'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/goyo.vim'
 Plug 'wellle/targets.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -29,6 +30,7 @@ Plug 'honza/vim-snippets'
 Plug 'metakirby5/codi.vim'
 Plug 'benmills/vimux'
 Plug 'jiangmiao/auto-pairs'
+Plug 'https://github.com/adelarsq/vim-matchit'
 Plug 'kevinoid/vim-jsonc'
 " Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
 " Plug 'chriskempson/base16-vim'
@@ -61,7 +63,7 @@ lua require'telescope'.load_extension('gh')
 source ~/.config/nvim/plug-config/basic.vim
 
 " Fzf setup
-source ~/.config/nvim/plug-config/fzf.vim
+" source ~/.config/nvim/plug-config/fzf.vim
 
 " COC setup
 source ~/.config/nvim/plug-config/coc.vim
@@ -71,6 +73,9 @@ source ~/.config/nvim/plug-config/keys.vim
 
 " Windows clipboard sync setup file
 source ~/.config/nvim/plug-config/clipboard.vim
+
+" Navigate vim as well as tmux with same command
+source ~/.config/nvim/plug-config/tmuxNavigator.vim
 
 " Theme setup
 source ~/.config/nvim/plug-config/theme.vim

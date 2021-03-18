@@ -92,6 +92,7 @@ let g:which_key_map.s = {
       \ 'y' : [':Telescope filetypes',                 'file types'],
       \ 'z' : [':Telescope vim_options',               'Vim Options'],
       \ 't' : [':Telescope highlights',                'Highlights'],
+      \ '?' : [':NvimTreeFindFile',                    'Find file'],
       \ }
       " \ 's' : [':Snippets'     , 'snippets'],
 
@@ -103,13 +104,13 @@ nnoremap <leader>gb = :lua require'gitsigns'.blame_line()<CR>
 " g is for git
 let g:which_key_map.g = {
       \ 'name' : '+git',
-      \ 'i' : [':Telescope gh issues'                          , 'Issues'],
-      \ 'p' : [':Telescope gh pull_request'                          , 'Pull Requests'],
+      \ 'i' : [':Telescope gh issues',       'Issues'],
+      \ 'p' : [':Telescope gh pull_request', 'Pull Requests'],
       \ 's' : 'Stage Hunk',
       \ 'u' : 'Unstage Hunk',
       \ 'r' : 'Reset Hunk',
       \ 'l' : 'Blame Line',
-      \ 'g' : [':Telescope gh_gist'                          , 'Gists'],
+      \ 'g' : [':Telescope gh_gist',         'Gists'],
        \ }
 
 

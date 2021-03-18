@@ -17,8 +17,8 @@ set splitbelow
 set splitright
 set t_Co=256
 set conceallevel=0
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set smartindent
 set autoindent
