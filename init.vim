@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sleuth'
 " Easily align shit
 Plug 'junegunn/vim-easy-align'
-" Get tabline and a better status line
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'Adictya/nvcode-color-schemes.vim'
 " Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
@@ -30,16 +29,15 @@ Plug 'honza/vim-snippets'
 Plug 'metakirby5/codi.vim'
 Plug 'benmills/vimux'
 Plug 'jiangmiao/auto-pairs'
-Plug 'https://github.com/adelarsq/vim-matchit'
+Plug 'adelarsq/vim-matchit'
 Plug 'kevinoid/vim-jsonc'
 " Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
-" Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-repeat'
 Plug 'vifm/vifm.vim'
 Plug 'ChristianChiarulli/far.vim'
 " Plug 'easymotion/vim-easymotion',
 Plug 'vim-scripts/ReplaceWithRegister'
-" Plug 'liuchengxu/vista.vim'
+Plug 'liuchengxu/vista.vim'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'

@@ -12,7 +12,7 @@ local colors = {
   blue     =  '#57c7ff',
   magenta  =  '#ff6ac1',
   cyan     =  '#9aedfe',
-  bg	   =  '#1e2127',
+  bg	   =  '#262932',
   black    =  '#000000'
 }
 
@@ -263,6 +263,16 @@ gls.right[5] = {
   ScrollBar = {
     condition = checkwidth,
     provider = 'ScrollBar',
+    highlight = {colors.yellow,colors.bg},
+  }
+}
+
+gls.right[6] = {
+  CurrentTime = {
+    condition = checkwidth,
+    separator = ' ',
+    provider = function () return os.date(' %I:%M %p ') end,
+    separator_highlight = {colors.purple,colors.bg},
     highlight = {colors.yellow,colors.purple},
   }
 }
