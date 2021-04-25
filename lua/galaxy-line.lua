@@ -12,7 +12,7 @@ local colors = {
   blue     =  '#57c7ff',
   magenta  =  '#ff6ac1',
   cyan     =  '#9aedfe',
-  bg	   =  '#262932',
+  bg	   =  '62932',
   black    =  '#000000'
 }
 
@@ -213,13 +213,20 @@ gls.left[13] = {
 --     highlight = {colors.bg,colors.magenta}
 --   }
 -- }
+gls.left[14] = {
+  InitSep = {
+    provider = function () return ' ' end,
+    condition = onlycheckwidth,
+    highlight = {colors.black,colors.magenta,'bold'},
+  }
+}
 gls.left[15] = {
   BufferType = {
     provider = 'FileName',
     separator = '',
     condition = onlycheckwidth,
-    separator_highlight = {colors.blue,colors.bg},
-    highlight = {colors.bg,colors.magenta}
+    separator_highlight = {colors.magenta,colors.bg},
+    highlight = {colors.black,colors.magenta,'bold'},
   }
 }
 

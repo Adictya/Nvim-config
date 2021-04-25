@@ -2,6 +2,7 @@
 nnoremap <silent> <leader> :silent WhichKey '<space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<space>'<CR>
 
+
 " Create map to add keys to
 let g:which_key_map =  {}
 " Define a separator
@@ -34,14 +35,14 @@ let g:which_key_map['d'] = [ ':bd!',                  'delete buffer']
 let g:which_key_map['f'] = [ ':Telescope find_files', 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s',                'split below']
 let g:which_key_map['q'] = [ 'q',                     'quit' ]
-let g:which_key_map['r'] = [ ':Vifm',                 'ranger' ]
+let g:which_key_map['r'] = [ ':RnvimrToggle',                 'ranger' ]
 let g:which_key_map['S'] = [ ':SSave',                'save session' ]
 let g:which_key_map['v'] = [ '<C-W>v',                'split right']
 let g:which_key_map['z'] = [ 'Goyo',                  'zen' ]
 let g:which_key_map['u'] = [ ':cd %:p:h',             'update directory' ]
 let g:which_key_map['e'] = [ ':NvimTreeToggle',        'Open Explorer' ]
-let g:which_key_map['p'] = [ ':Buffers',              'search buffer' ]
-let g:which_key_map['w'] = [ ':!explorer.exe .',      'open Wexplorer' ]
+let g:which_key_map['p'] = [ ':Telescope buffers',              'search buffer' ]
+let g:which_key_map['w'] = [ ':!dolphin .',      'open explorer' ]
 let g:which_key_map['c'] = [ ':Telescope registers',  'clipboard' ]
 " Group mappings
 
@@ -117,7 +118,7 @@ let g:which_key_map.g = {
 " l is for language server protocol
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
-      \ '.' : [':CocConfig'                          , 'config'],
+      \ '.' : [':CocConfig'                         , 'config'],
       \ ';' : ['<Plug>(coc-refactor)'                , 'refactor'],
       \ 'a' : ['<Plug>(coc-codeaction)'              , 'line action'],
       \ 'A' : ['<Plug>(coc-codeaction-selected)'     , 'selected action'],
@@ -125,11 +126,12 @@ let g:which_key_map.l = {
       \ 'B' : [':CocPrev'                            , 'prev action'],
       \ 'c' : [':CocList commands'                   , 'commands'],
       \ 'd' : ['<Plug>(coc-definition)'              , 'definition'],
-      \ 'D' : ['<Plug>(coc-declaration)'             , 'declaration'],
       \ 'e' : [':CocList extensions'                 , 'extensions'],
       \ 'f' : ['<Plug>(coc-format-selected)'         , 'format selected'],
+      \ 'D' : ['<Plug>(coc-declaration)'             , 'declaration'],
       \ 'F' : ['<Plug>(coc-format)'                  , 'format'],
       \ 'h' : ['<Plug>(coc-float-hide)'              , 'hide'],
+      \ 'H' : [':call <SNR>13_show_documentation()<CR>'              , 'show'],
       \ 'i' : ['<Plug>(coc-implementation)'          , 'implementation'],
       \ 'I' : [':CocList diagnostics'                , 'diagnostics'],
       \ 'j' : ['<Plug>(coc-float-jump)'              , 'float jump'],
@@ -156,20 +158,18 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal-options' ,
-      \ 'n' : [':call VimuxRunCommand(";c;npm run start")'                              , 'node start'],
-      \ 'b' : [':call VimuxRunCommand(";c;npm run build")'                              , 'node build'],
-      \ 'i' : [':VimuxInspectRunner'      , 'copy ouptut'],
-      \ 'l' : [':VimuxRunLastCommand'                               , 'run last command'],
-      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
-      \ 'g' : [':FloatermNew lazygit'                           , 'git'],
-      \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
-      \ 'p' : [':FloatermNew python3'                           , 'python'],
-      \ 'r' : [':FloatermNew vifm'                            , 'vifm'],
-      \ 't' : [':call VimuxRunCommand(";")'                                , 'toggle'],
-      \ 'c' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 &&  ./a.out")'           , 'Cpp Compile And Run'],
-	  \ 'C' : [':call VimuxRunCommand("c;g++ " . bufname("%") . " -std=c++17 && cat input.txt | ./a.out")' , 'Cpp with custom input'],
-      \ 'J' : [':call VimuxRunCommand("c;javac " . bufname("%") . " && cat input.txt | java " . expand("%:r") )'  , 'Java with Custom input'],
-      \ 'j' : [':call VimuxRunCommand("c;javac " . bufname("%") . " && java " . expand("%:r"))'           , 'Java Compile and Run']
+      \ 'n' : [':call VimuxRunCommand(";c;npm run start")', 'node start'],
+      \ 'b' : [':call VimuxRunCommand(";c;npm run build")', 'node build'],
+      \ 'i' : [':VimuxInspectRunner',                       'copy ouptut'],
+      \ 'l' : [':VimuxRunLastCommand',                      'run last command'],
+      \ 'f' : [':FloatermNew fzf',                          'fzf'],
+      \ 'g' : [':FloatermNew lazygit',                      'git'],
+      \ 'd' : [':FloatermNew lazydocker',                   'docker'],
+      \ 'p' : [':FloatermNew python3',                      'python'],
+      \ 'r' : [':RnvimrToggle',                             'ranger'],
+      \ 't' : [':call VimuxRunCommand(";")',                'toggle'],
+      \ 'c' : [':call VimuxRunCommand(g:runCmd)',           'compile and run'],
+      \ 'C' : [':call VimuxRunCommand(g:runCmdArg)',        'run with input'],
       \ }
 
 

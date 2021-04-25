@@ -1,5 +1,3 @@
-let g:mkdp_open_to_the_world = 1
-
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
 let g:mkdp_auto_start = 0

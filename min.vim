@@ -8,7 +8,7 @@ set hidden
 set pumheight=10
 set ruler
 set cmdheight=2
-set iskeyword
+" set iskeyword
 set mouse=a
 set splitbelow
 set splitright
@@ -29,7 +29,7 @@ set nowritebackup
 set updatetime=300
 set formatoptions-=cro
 set autochdir
-set splitbelow splitright
+set numberwidth=1
 
 nnoremap ; :
 nnoremap : ;
@@ -48,7 +48,6 @@ cnoremap <C-j> <Down>
 cnoremap <C-k> <Up>
 cnoremap <C-l> <Right>
 
-" colorscheme snaz
 
 call plug#begin('~/.vim/plugged')
 
@@ -56,12 +55,16 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'alvan/vim-closetag'
 Plug 'unblevable/quick-scope'
+Plug 'phaazon/hop.nvim'
 Plug 'tpope/vim-sleuth'
 Plug 'wellle/targets.vim'
+Plug 'ratazzi/blackboard.vim'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-user'
-Plug 'sainnhe/edge'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 call plug#end()
+
+colorscheme blackboard

@@ -5,6 +5,8 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
 
+  "snippets.userSnippetsDirectory": "~/.config/nvim/utils/snips",
+
   "snippets.ultisnips.directories":
   [
     "UltiSnips",
@@ -22,7 +24,7 @@
 
   // "prettier.semi":false,
 
-  "prettier.eslintIntegration": true,
+  // "prettier.tslintIntegration": true,
 
   "emmet.showAbbreviationSuggestions": true,
 
@@ -56,6 +58,13 @@
     "constructor": "  ",
     "value": "  ",
     "enumMember": "  "
+  },
+
+  "cSpell.enabledLanguageIds":{
+    "default":[
+      "plaintext",
+      "text"
+    ]
   }
 
 }

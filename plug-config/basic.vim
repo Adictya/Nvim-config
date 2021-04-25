@@ -6,12 +6,12 @@ set incsearch
 set nowrap
 set undodir=~/.vim/undodir
 set undofile
+set ignorecase
 set smartcase
 set hidden
 set pumheight=10
 set ruler
 set cmdheight=2
-set iskeyword
 set mouse=a
 set splitbelow
 set splitright
