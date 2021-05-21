@@ -1,5 +1,5 @@
 " Set default register to + which is the linux clipboard
-set clipboard:unnamedplus
+set clipboard+=unnamedplus
 
 " Sync Windows clipboard with wsl clipboard
 " let s:clip = '/mnt/c/Windows/System32/clip.exe'

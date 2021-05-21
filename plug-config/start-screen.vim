@@ -12,9 +12,9 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.zshrc' },
             \ { 't': '~/.tmux.conf' },
             \ { 'r': '~/.config/ranger/rc.conf' },
-            \ { 'w': '/mnt/c/Users/Aditya/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/settings.json' },
-            \ { 'p' : '/mnt/d/Libraries/Programing'},
-            \ { 'd' : '/mnt/d/Libraries/Programing/competitive/dsadays'},
+            \ { 'p' : '/mnt/d/Libraries/Programing/'},
+            \ { 'd' : '/mnt/d/Libraries/Programing/competitive/dsadays/'},
+            \ { 'y': '~/.config/alacritty/alacritty.yml' },
             \ ]
 
 let g:startify_session_delete_buffers = 1

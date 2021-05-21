@@ -62,5 +62,7 @@ nnoremap gP i<CR><Esc>PkJxJx
 nnoremap gp a<CR><Esc>PkJxJx
 nnoremap dil ^d$
 
+nnoremap Q @q
+
 " Comment Fix
 vmap gcc gc
