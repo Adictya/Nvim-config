@@ -155,8 +155,9 @@ let g:which_key_map.l = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal-options' ,
-      \ 'n' : [':call VimuxRunCommand(";c;npm run start")'                              , 'node start'],
-      \ 'b' : [':call VimuxRunCommand(";c;npm run build")'                              , 'node build'],
+      \ 'n' : [':call VimuxRunCommand(";c;w npm run start")'                              , 'node start'],
+      \ 'b' : [':call VimuxRunCommand(";c;w npm run build")'                              , 'node build'],
+      \ 's' : [':call VimuxRunCommand(";c;w live-server .")'                              , 'start live server'],
       \ 'i' : [':VimuxInspectRunner'      , 'copy ouptut'],
       \ 'l' : [':VimuxRunLastCommand'                               , 'run last command'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
